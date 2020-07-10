@@ -1,42 +1,3 @@
-/*import React,{useEffect, useState} from 'react';
-import Cards from './Cards'
-import Chart from './Chart'
-import CountryPicker from './CountryPicker'
-
-import './App.css';
-
-function App() {
-  const [Data,setData]=useState([])
-  useEffect(() => {
-
-    async function dataFetch(){
-      await fetch('https://covid19.mathdro.id/api')
-      .then(response=>response.json())
-      .then((result)=>{
-        
-        setData(result.items);
-      })
-     
-    }
-    dataFetch();
-  
-     
-  }, [])
-    
-  return (
-    <div className="App">
-  
-     <h1>Hello</h1>
-     <Cards />
-     <Chart />
-     <CountryPicker />
-    </div>
-  );
-}
-
-export default App;
-
-*/
 import React from 'react';
 import Cards from './Cards'
 import Chart from './Chart'
@@ -56,7 +17,7 @@ class App extends React.Component {
     this.setState({data: FetchedData});
   }
   handleCountryChange=async(country)=>{
-    //console.log(country);
+   
     const FetchedData = await FetchData(country);
     this.setState({data: FetchedData, country:country});
     console.log(FetchedData);
@@ -66,9 +27,13 @@ class App extends React.Component {
      
   return (
     <div className="App">
+      <div className="div-head">
+        <header>COVID-19 App Tracker</header>
+      </div>
      <Cards data={data} />
      <CountryPicker handleCountryChange={this.handleCountryChange} />
      <Chart data={data} country={country}/>
+     <div className="div-footer"><footer><a href="https://github.com/ShoaibSyedDev/covid-19-tracker-app">Source Code Github Repository</a> </footer></div>
      
     </div>
   );}

@@ -13,7 +13,7 @@ export default function CountryPicker({handleCountryChange}) {
     },[setFetchedCountries]);
     console.log(fetchedCountries);
         return (
-        <div>
+        <div className="div-form">
             <FormControl className="formControl">
                 <NativeSelect defaultValue='' onChange={(e)=> handleCountryChange(e.target.value)}>
                     <option value="">Global</option>

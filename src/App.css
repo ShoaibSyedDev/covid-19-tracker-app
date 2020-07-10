@@ -7,3 +7,24 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+header{
+    background-color: rgb(0, 0, 255,0.5);
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    
+}
+footer{
+    background-color: rgba(16, 204, 72, 0.986);
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
