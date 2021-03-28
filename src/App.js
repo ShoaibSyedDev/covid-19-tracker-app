@@ -28,7 +28,7 @@ class App extends React.Component {
   return (
     <div className="App">
       <div className="div-head">
-        <header>COVID-19 App Tracker By Syed Shoaib Abbas</header>
+        <header>COVID-19 App Tracker</header>
       </div>
      <Cards data={data} />
      <CountryPicker handleCountryChange={this.handleCountryChange} />
